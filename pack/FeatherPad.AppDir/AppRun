@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#========================#
+# Executable path        #
+#========================#
+SCRIPT=`realpath $0`
+SCRIPTPATH=`dirname $SCRIPT`
+
+PATH=$SCRIPTPATH/usr/bin:$PWD
+
+#========================#
+# Library load path      #
+#========================#
+LD_LIBRARY_PATH=$SCRIPTPATH/usr/lib
+
+#========================#
+# Put your script here   #
+#========================#
